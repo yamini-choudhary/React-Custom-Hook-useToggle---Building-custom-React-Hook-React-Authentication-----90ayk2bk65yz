@@ -5,7 +5,7 @@ const App = () => {
 
   
 
-    const [isTextChanged, setIsTextChanged] = useToggle();
+    const [isTextChanged, setIsTextChanged] = useToggle(false);
 
   return(
         <button id='button' onClick={setIsTextChanged}>{isTextChanged ? 'Toggled' : 'Click to Toggle'}</button>
